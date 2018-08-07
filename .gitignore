@@ -1,0 +1,4 @@
+.DS_Store
+install/Install macOS*.app
+install/packages/*.pkg
+install*.dmg
