@@ -3,7 +3,9 @@
 A bare-bones tool to install macOS and a set of packages on a target volume.
 Typically these would be packages that "enroll" the machine into your management system; upon completion of the macOS install these tools would take over and continue the setup and configuration of the machine.
 
-installr is designed to run in Recovery boot (and also possibly Internet Recovery), allowing you to reinstall a machine for redeployment
+installr is designed to run in Recovery boot (and also possibly Internet Recovery), allowing you to reinstall a machine for redeployment.
+
+If you are preparing a fresh-out-of-the-box machine, consider NOT reinstalling macOS and just installing your additional packages. [bootstrappr](https://github.com/munki/bootstrappr) can help you with that task. 
 
 ### macOS Installer
 
