@@ -9,6 +9,8 @@ installr is designed to run in Recovery boot (and also possibly Internet Recover
 
 Copy an Install macOS application into the install/ directory. This must be a "full" installer, containing the Contents/Resources/startosinstall tool.
 
+I've currently tested the 10.13.6 (17G65) installer and the Mojave Beta (18A353d) installer. Older installers may or may not work.
+
 ### Packages
 
 Add desired packages to the `install/packages` directory. Ensure all packages you add can be properly installed to volumes other than the current boot volume.
