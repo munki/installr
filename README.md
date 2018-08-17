@@ -17,7 +17,11 @@ I've currently tested the 10.13.6 (17G65) installer and the Mojave Beta (18A353d
 
 Add desired packages to the `install/packages` directory. Ensure all packages you add can be properly installed to volumes other than the current boot volume.
 
+`startosinstall` requires that all additional packages be Distribution-style packages (typically built with `productbuild`) and not component-style packages (typically built with `pkgbuild`).
+
 If your packages just have payloads, they should work fine. Pre- and postinstall scripts need to be checked to not use absolute paths to the current startup volume. The installer system passes the target volume in the third argument `$3` to installation scripts.
+
+`startosinstall` in High Sierra ignores additional package's RestartActions. This means that if software installed by one or more or your packages requires a restart for full functionality, it won't be fully functional when the High Sierra installer completes its work.
 
 ### Order
 
