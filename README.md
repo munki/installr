@@ -11,7 +11,7 @@ If you are preparing a fresh-out-of-the-box machine, consider NOT reinstalling m
 
 Copy an Install macOS application into the install/ directory. This must be a "full" installer, containing the Contents/Resources/startosinstall tool.
 
-I've currently tested the 10.13.6 (17G65) installer and some Mojave Beta (18A353d, 18A365a, 18A371a) installers. Older installers may or may not work.
+I've currently tested the 10.13.4 (17E199), 10.13.6 (17G65), and some Mojave Beta (18A353d, 18A365a, 18A371a) installers. Older installers may or may not work.
 
 ### Packages
 
