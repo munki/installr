@@ -17,7 +17,7 @@ I've currently tested the 10.13.4 (17E199), 10.13.6 (17G65), and some Mojave Bet
 
 Add desired packages to the `install/packages` directory. Ensure all packages you add can be properly installed to volumes other than the current boot volume.
 
-`startosinstall` requires that all additional packages be Distribution-style packages (typically built with `productbuild`) and not component-style packages (typically built with `pkgbuild`).
+**Important:** `startosinstall` requires that all additional packages be Distribution-style packages (typically built with `productbuild`) and not component-style packages (typically built with `pkgbuild`). This means that packages you use successfully with `bootstrappr` or Imagr or Munki won't necessarily work with `installr`; those other tools can install component-style packages. `startosinstall` will fail with an error if given component-style packages to install.
 
 If your packages just have payloads, they should work fine. Pre- and postinstall scripts need to be checked to not use absolute paths to the current startup volume. The installer system passes the target volume in the third argument `$3` to installation scripts.
 
