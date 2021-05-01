@@ -40,7 +40,7 @@ installr is particularly useful with Macs with T2 chips, which do not support Ne
 
 ### Usage scenarios
 
-#### Scenario #1: USB Thumb drive
+#### Scenario #1: USB thumbdrive
 
 * Preparation:
   * Copy the contents of the `install/` directory to a USB thumbdrive.
